@@ -1,0 +1,16 @@
+$yellow: #ffd200;
+
+@mixin futuraBook {
+    font-family: 'FuturaBookC';
+    color: #000000;
+}
+
+@mixin futuraDemi {
+    font-family: 'FuturaDemiC';
+    color: #000000;
+}
+
+@mixin typeWriter {
+    font-family: 'TypeWriter';
+    color: #000000;
+}
