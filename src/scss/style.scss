@@ -1,6 +1,6 @@
-@import 'vars';
-@import 'fonts';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "global";
 
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -8,7 +8,106 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 
+// header start
 
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 35px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-item {
+        width: 50px;
+        height: 52px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        margin: 36px 9px 20px;
+    }
+
+    &__social-item--inst {
+        background-image: url(../images/social/inst.png);
+    }
+
+    &__social-item--fb {
+        background-image: url(../images/social/fb.png);
+    }
+
+    &__social-item--tw {
+        background-image: url(../images/social/tw.png);
+    }
+
+    &__social-item--vk {
+        background-image: url(../images/social/vk.png);
+    }
+
+    &__menu,
+    &__menu-list {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-top: 18px;
+    }
+
+    &__menu-list {
+        padding-top: 22px;
+
+        li {
+            padding: 0 25px;
+        }
+
+        a {
+            @include futuraDemi;
+            color: #000000;
+            font-size: 20px;
+        }
+    }
+
+    &__logo-inner {
+        padding: 0 25px;
+    }
+
+    &__logo-img {
+        width: 327px;
+        height: 69px;
+    }
+
+    &__links {
+        margin-top: 40px;
+    }
+
+    &__link,
+    &__link-enter {
+        @include futuraDemi;
+        color: #000000;
+        font-size: 20px;
+        border: 2px solid #000;
+        border-radius: 20px;
+        margin: 0 12px;
+        transition: linear .5s;
+
+        &:hover {
+            border: 2px solid $yellow;
+            background-color: $yellow;
+        }
+    }
+
+    &__link-enter {
+        padding: 15px 36px 15px;
+    }
+
+    &__link {
+        padding: 15px 45px 15px;
+    }
+}
+
+// header end
 
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -16,4 +115,4 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 
-@import 'media';
+@import "media";
